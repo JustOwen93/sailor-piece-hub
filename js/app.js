@@ -1811,7 +1811,7 @@ async function init() {
   })
 
   try {
-    const res = await fetch('public/data.json')
+    const res = await fetch('./public/data.json')
     DATA = await res.json()
   } catch {
     document.getElementById('app').innerHTML =
